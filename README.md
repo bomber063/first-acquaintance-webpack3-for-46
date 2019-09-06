@@ -60,5 +60,39 @@ Server running at http://localhost:1234
 3. index.html
 * 可以看到js里面已经把let转换为var，并且也已经加载到index.html里面去了。
 * 当你打开网页http://localhost:1234的时候就可以看到，**js已经加载完成并打印出来了**。
-#### 转换SCSS为CSS
-* 
+#### 引入CSS
+* 创建一个style.css，内容为
+```
+body {
+  height: 100px;
+  background-color: #ddd;
+}
+
+body p {
+  height: 50px;
+  background-color: blue;
+}
+```
+* 然后再index.js里面增加
+```
+import './style.css'
+```
+* 因为之间运行了parcel index.html，就已经监控了，然后就可以看到后台自动更新，并且网页自动更新并加载了style.css代码
+#### 引入SCSS并转换为CSS
+* 创建一个style.scss，内容为
+```
+body{
+    height:100px;
+    background-color:#ddd;
+    p{
+        height:50px;
+        background-color: blue;
+    }
+}
+
+```
+* 然后再index.js里面增加
+```
+import './style.scss'
+```
+* 因为之间运行了parcel index.html，就已经监控了，然后就可以看到后台自动去下载能否运行scss的插件，并更新后台，然后网页自动更新并加载了style.scss代码

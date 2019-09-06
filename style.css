@@ -1,0 +1,9 @@
+body {
+  height: 100px;
+  background-color: #ddd;
+}
+
+body p {
+  height: 50px;
+  background-color: grey;
+}

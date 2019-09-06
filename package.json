@@ -19,5 +19,8 @@
   "homepage": "https://github.com/bomber063/first-acquaintance-webpack3-for-46#readme",
   "dependencies": {
     "module-1": "0.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.23.0-module.beta.1"
   }
 }
